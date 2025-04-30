@@ -1,30 +1,51 @@
 # 🚌 Bus Tracking System (BTS)
 
-A full-stack web application that enables real-time tracking of buses on a dynamic map interface. The goal is to provide users with accurate and updated bus locations, reducing wait time and improving commute planning.
+A full-stack web application that enables real-time tracking of buses on a dynamic map interface. Built using *React.js, **Spring Boot, and **Leaflet*, it helps students and staff monitor bus locations and plan commutes effectively.
 
-Built using modern technologies including **React.js**, **Spring Boot**, and **Leaflet**, this project combines powerful backend data handling with an interactive and user-friendly frontend.
+Bus Tracking System (BTS) designed specifically for college students, staff, and faculty members. The main goal of the project is to ensure that no one misses their bus and no one arrives late due to uncertainty about bus locations. With real-time tracking and bus information, users can plan accordingly and stay informed about their transportation.
 
+---
 
-## 📝 Description
+## 📖 Table of Contents
+- [📖 Table of Contents](#-table-of-contents)
+- [📝 Project Description](#-project-description)
+- [📂 Project Structure](#-project-structure)
+- [⚙ Tech Stack](#-tech-stack)
+- [📦 Backend Dependencies](#-backend-dependencies)
+- [🚀 Setup Instructions](#-setup-instructions)
+- [🌐 API Endpoints](#-api-endpoints)
+- [✅ Features](#-features)
+- [🔮 Future Enhancements](#-future-enhancements)
+- [👨‍💻 Author](#-author)
 
-This is a Bus Tracking System (BTS) designed specifically for college students, staff, and faculty members. The main goal of the project is to ensure that no one misses their bus and no one arrives late due to uncertainty about bus locations. With real-time tracking and bus information, users can plan accordingly and stay informed about their transportation.
+---
+
+## 📝 Project Description
+
+The *Bus Tracking System (BTS)* is tailored for college students, faculty, and staff to ensure nobody misses their bus or arrives late. With real-time tracking and live bus data, users stay informed and plan their travel efficiently.
+
+---
 
 ## 📂 Project Structure
+
+
 Final BTS Backend/
 ├── BusTracking/
-│ ├── src/ # Java source files (Spring Boot)
-│ ├── pom.xml # Maven dependencies
-│ └── ... # Spring Boot config and utils
+│   ├── src/                 # Java source files (Spring Boot)
+│   ├── pom.xml              # Maven dependencies
+│   └── ...                  # Configs and utils
 
 Final BTS Frontend/
 ├── Frontend/
-│ ├── src/ # React source files
-│ ├── public/
-│ ├── package.json # Frontend dependencies
-│ └── vite.config.js # Vite config (for React build)
+│   ├── src/                 # React source files
+│   ├── public/
+│   ├── package.json         # Frontend dependencies
+│   └── vite.config.js       # Vite configuration
 
 
-## ⚙️ Technologies Used
+---
+
+## ⚙ Tech Stack
 
 ### 🔧 Backend (Spring Boot)
 - Java 21
@@ -40,75 +61,88 @@ Final BTS Frontend/
 - Axios
 - CSS/HTML
 
-### 🗄️ Database
+### 🗄 Database
 - MySQL
 
-## 📦 Backend Dependencies (in pom.xml)
-Includes:
-- Spring Boot Starter Web
-- Spring Boot Starter Data JPA
-- Spring Boot Starter Security
-- MySQL Connector
-- Lombok
-- JWT (io.jsonwebtoken)
-- Spring Boot Test & Security Test
+---
+
+## 📦 Backend Dependencies (pom.xml)
+- spring-boot-starter-web
+- spring-boot-starter-data-jpa
+- spring-boot-starter-security
+- mysql-connector-java
+- lombok
+- jjwt (io.jsonwebtoken)
+- spring-boot-starter-test
+- spring-security-test
+
+---
 
 ## 🚀 Setup Instructions
 
-### 1. Clone the Repository
-```bash
-git clone <repo-url>
-2. Backend Setup
+### 1️⃣ Clone the Repository
 bash
-cd Final\ BTS\ Backend/BusTracking
-Update application.properties:
+git clone <repo-url>
 
+
+### 2️⃣ Backend Setup
+bash
+cd "Backend/BusTracking"
+
+
+Update application.properties:
 properties
 spring.datasource.url=jdbc:mysql://localhost:3306/bts
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 spring.jpa.hibernate.ddl-auto=update
-Run backend:
 
+
+Run the backend:
 bash
 ./mvnw spring-boot:run
-Backend will run at http://localhost:8080
 
-3. Frontend Setup
+Server runs at: http://localhost:8080
+
+### 3️⃣ Frontend Setup
 bash
-cd Final\ BTS\ Frontend/BTS/Frontend
+cd "Frontend/Frontend"
 npm install
 npm run dev
-Frontend will run at http://localhost:5173
 
-🌐 API Endpoints
-Method	Endpoint	Description
-GET	/buses	Get all buses
-GET	/buses/{busNumber}	Get bus by number
-GET	/buses/nearby	Get nearby buses
-POST	/buses	Add new bus info
+Frontend runs at: http://localhost:5173
 
+---
 
-✅ Features
-🔍 Search Bus by Number
+## 🌐 API Endpoints
 
-📍 Show Nearby Buses
+| Method | Endpoint              | Description           |
+|--------|-----------------------|-----------------------|
+| GET    | /buses              | Get all buses         |
+| GET    | /buses/{busNumber}  | Get bus by number     |
+| GET    | /buses/nearby       | Get nearby buses      |
+| POST   | /buses              | Add new bus info      |
 
-📊 Display All Bus Records
+---
 
-🔒 JWT-based Authentication
+## ✅ Features
+- 🔍 Search Bus by Number  
+- 📍 Show Nearby Buses  
+- 📊 Display All Bus Records  
+- 🔒 JWT-based Authentication  
+- 🛡 Secure REST APIs  
 
-🛡️ Secure REST APIs
+---
 
-🔮 Future Enhancements
-🗺️ Google Maps Integration
+## 🔮 Future Enhancements
+- 🗺 Google Maps Integration  
+- 📱 Mobile Responsive Design  
+- 🧑‍💼 Admin Panel  
+- 📡 Live Location Updates  
 
-📱 Mobile Responsive Design
+---
 
-🧑‍💼 Admin Panel
+## 👨‍💻 Author
 
-📡 Live Location Updates
-
-👨‍💻 Author
-Your Name — Full Stack Developer
-📧 yourname@example.com
+*Sneha Verma* – Web Developer   
+📧 vermasneha0707@gmail.com
